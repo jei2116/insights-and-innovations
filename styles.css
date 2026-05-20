@@ -786,6 +786,63 @@ section {
   opacity: 0.65;
 }
 
+/* -- Testimonials -- */
+.testimonials {
+  background: var(--navy);
+  padding: var(--space-10) 0;
+}
+
+.testimonials h2 {
+  color: var(--cream);
+  margin-bottom: var(--space-7);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.testimonial {
+  background: var(--cream-15);
+  border-radius: var(--radius-card);
+  padding: var(--space-6);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.testimonial blockquote {
+  margin: 0;
+  flex: 1;
+}
+
+.testimonial blockquote p {
+  font-size: var(--size-body-lg);
+  line-height: 1.65;
+  color: var(--cream);
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonial-name {
+  font-size: var(--size-body);
+  font-weight: 500;
+  color: var(--cream);
+}
+
+.testimonial-role {
+  font-size: var(--size-small);
+  color: var(--cream-60);
+}
+
 /* -- ConnectInk (dark section) -- */
 .connectink {
   position: relative;

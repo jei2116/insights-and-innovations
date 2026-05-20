@@ -128,20 +128,63 @@
     <section id="partners" class="partners" aria-labelledby="partners-title">
       <div class="container">
         <div class="eyebrow">Partners</div>
-        <h2 id="partners-title" class="sr-only">Partners</h2>
         <p class="partners-intro">
           We've had the privilege of working with schools, organizations, and institutions committed to reimagining education.
         </p>
+      </div>
 
-        <div class="partners-grid">
-          <div class="partner">Bed-Stuy New Beginnings</div>
-          <div class="partner">CPET · Teachers College</div>
-          <div class="partner">Dr. Richard Izquierdo Charter School</div>
-          <div class="partner">East Bronx</div>
-          <div class="partner">Leaders High School</div>
-          <div class="partner">Northside Charter High School</div>
-          <div class="partner">Teachers College, Columbia University</div>
-          <div class="partner">The Wellness Classroom</div>
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <!-- Set 1 -->
+          <a href="https://www.bsnbcs.org/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-bedstuy.png" alt="Bed-Stuy New Beginnings">
+          </a>
+          <a href="https://www.drizquierdocharterschools.org/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-izquierdo.webp" alt="Dr. Richard Izquierdo Charter School">
+          </a>
+          <a href="https://sites.google.com/eastbronxacademy.org/east-bronx-academy-website/home" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-east-bronx.png" alt="East Bronx Academy">
+          </a>
+          <a href="https://www.nycoutwardbound.org/our-schools/leaders/home/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-leaders.png" alt="Leaders High School">
+          </a>
+          <a href="https://northsidechs.org/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-northside.png" alt="Northside Charter High School">
+          </a>
+          <a href="https://www.tc.columbia.edu" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-teachers-college.png" alt="Teachers College, Columbia University">
+          </a>
+          <a href="https://cpet.tc.columbia.edu/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-cpet.png" alt="CPET at Teachers College">
+          </a>
+          <a href="https://www.wellnessclassroom.org/" target="_blank" rel="noopener" class="partner-item">
+            <img src="images/logo-wellness.webp" alt="The Wellness Classroom">
+          </a>
+          <!-- Set 2 (duplicate for seamless loop) -->
+          <a href="https://www.bsnbcs.org/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-bedstuy.png" alt="">
+          </a>
+          <a href="https://www.drizquierdocharterschools.org/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-izquierdo.webp" alt="">
+          </a>
+          <a href="https://sites.google.com/eastbronxacademy.org/east-bronx-academy-website/home" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-east-bronx.png" alt="">
+          </a>
+          <a href="https://www.nycoutwardbound.org/our-schools/leaders/home/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-leaders.png" alt="">
+          </a>
+          <a href="https://northsidechs.org/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-northside.png" alt="">
+          </a>
+          <a href="https://www.tc.columbia.edu" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-teachers-college.png" alt="">
+          </a>
+          <a href="https://cpet.tc.columbia.edu/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-cpet.png" alt="">
+          </a>
+          <a href="https://www.wellnessclassroom.org/" target="_blank" rel="noopener" class="partner-item" aria-hidden="true" tabindex="-1">
+            <img src="images/logo-wellness.webp" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -153,7 +196,48 @@
         <h2>Our creation cycle.</h2>
 
         <div class="how-grid">
-          <img src="images/cycle-diagram.svg" alt="A cyclical process diagram showing four stages: Audit, Co-design, Prototype, and Implement, connected by arrows that loop continuously." class="cycle-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" class="cycle-img" aria-hidden="true">
+            <defs>
+              <radialGradient id="cyc-bg2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#DBBCF5" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#DBBCF5" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="cyc-accent2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#4490D9" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#4490D9" stop-opacity="0"/>
+              </radialGradient>
+              <marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#4490D9"/>
+              </marker>
+            </defs>
+            <circle cx="240" cy="240" r="220" fill="url(#cyc-bg2)"/>
+            <circle cx="240" cy="240" r="140" fill="url(#cyc-accent2)"/>
+            <circle cx="240" cy="240" r="170" fill="none" stroke="#4490D9" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+            <path d="M 376 198 A 170 170 0 0 1 376 282" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow2)" opacity="0.85"/>
+            <path d="M 282 376 A 170 170 0 0 1 198 376" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow2)" opacity="0.85"/>
+            <path d="M 104 282 A 170 170 0 0 1 104 198" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow2)" opacity="0.85"/>
+            <path d="M 198 104 A 170 170 0 0 1 282 104" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow2)" opacity="0.85"/>
+            <g class="cycle-node" data-step="1" tabindex="0" role="button" aria-label="Step 1: Audit">
+              <circle cx="240" cy="60" r="50" class="node-circle" fill="#F2EDED" stroke="#4490D9" stroke-width="1.5"/>
+              <text x="240" y="55" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="11" class="node-label" fill="#4490D9" font-weight="500" letter-spacing="0.08em">01</text>
+              <text x="240" y="76" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="15" class="node-name" fill="#11132A" font-weight="500" letter-spacing="-0.01em">Audit</text>
+            </g>
+            <g class="cycle-node" data-step="2" tabindex="0" role="button" aria-label="Step 2: Co-design">
+              <circle cx="420" cy="240" r="50" class="node-circle" fill="#F2EDED" stroke="#4490D9" stroke-width="1.5"/>
+              <text x="420" y="235" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="11" class="node-label" fill="#4490D9" font-weight="500" letter-spacing="0.08em">02</text>
+              <text x="420" y="256" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="15" class="node-name" fill="#11132A" font-weight="500" letter-spacing="-0.01em">Co-design</text>
+            </g>
+            <g class="cycle-node" data-step="3" tabindex="0" role="button" aria-label="Step 3: Prototype">
+              <circle cx="240" cy="420" r="50" class="node-circle" fill="#F2EDED" stroke="#4490D9" stroke-width="1.5"/>
+              <text x="240" y="415" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="11" class="node-label" fill="#4490D9" font-weight="500" letter-spacing="0.08em">03</text>
+              <text x="240" y="436" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="15" class="node-name" fill="#11132A" font-weight="500" letter-spacing="-0.01em">Prototype</text>
+            </g>
+            <g class="cycle-node" data-step="4" tabindex="0" role="button" aria-label="Step 4: Implement">
+              <circle cx="60" cy="240" r="50" class="node-circle" fill="#F2EDED" stroke="#4490D9" stroke-width="1.5"/>
+              <text x="60" y="235" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="11" class="node-label" fill="#4490D9" font-weight="500" letter-spacing="0.08em">04</text>
+              <text x="60" y="256" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="15" class="node-name" fill="#11132A" font-weight="500" letter-spacing="-0.01em">Implement</text>
+            </g>
+          </svg>
 
           <ol class="steps">
             <li class="step">

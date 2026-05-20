@@ -623,6 +623,59 @@ section {
   max-width: 480px;
 }
 
+.cycle-node {
+  cursor: pointer;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.cycle-node:hover,
+.cycle-node:focus {
+  transform: scale(1.13);
+  outline: none;
+}
+
+.node-circle {
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.cycle-node:hover .node-circle,
+.cycle-node:focus .node-circle {
+  fill: var(--blue);
+  stroke: var(--blue);
+}
+
+.node-label,
+.node-name {
+  transition: fill 0.2s ease;
+  pointer-events: none;
+}
+
+.cycle-node:hover .node-label,
+.cycle-node:hover .node-name,
+.cycle-node:focus .node-label,
+.cycle-node:focus .node-name {
+  fill: #F2EDED;
+}
+
+.step.step-active {
+  opacity: 1 !important;
+}
+
+.step.step-active .step-num {
+  background: var(--blue);
+  color: #fff;
+}
+
+.step.step-active .step-body {
+  color: var(--navy);
+}
+
+.step.step-dimmed {
+  opacity: 0.35 !important;
+}
+
 .steps {
   display: flex;
   flex-direction: column;
@@ -1039,30 +1092,48 @@ section {
   line-height: 1.55;
 }
 
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-  align-items: center;
+.partners-carousel {
+  overflow: hidden;
+  margin-top: var(--space-6);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
-.partner {
-  height: 56px;
-  border: 1px dashed rgba(17, 19, 42, 0.18);
-  border-radius: 8px;
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: partners-marquee 42s linear infinite;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes partners-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.partner-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10.5px;
-  color: var(--navy-45);
-  text-align: center;
-  padding: 0 8px;
-  transition: border-color var(--t-fast), color var(--t-fast);
+  padding: 0 48px;
+  flex-shrink: 0;
+  text-decoration: none;
 }
 
-.partner:hover {
-  border-color: var(--navy-25);
-  color: var(--navy-72);
+.partner-item img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.45);
+  transition: filter var(--t-base);
+}
+
+.partner-item:hover img {
+  filter: grayscale(0%) opacity(1);
 }
 
 /* -- Contact -- */

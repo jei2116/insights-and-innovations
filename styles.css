@@ -891,32 +891,12 @@ section {
 }
 
 .member-photo {
+  width: 100%;
   aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
   border-radius: var(--radius-media);
-  position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  padding: 20px;
-}
-
-.member-photo.rahul {
-  background: linear-gradient(135deg, var(--lavender) 0%, var(--blue) 100%);
-}
-
-.member-photo.julio {
-  background: linear-gradient(135deg, var(--pale-blue) 0%, var(--navy) 100%);
-}
-
-.member-photo-label {
-  font-size: 10px;
-  color: var(--navy-45);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.member-photo.julio .member-photo-label {
-  color: var(--cream-60);
 }
 
 .member-name {

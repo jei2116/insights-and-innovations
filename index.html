@@ -106,17 +106,10 @@
                 <stop offset="0%" stop-color="#4490D9" stop-opacity="0.18"/>
                 <stop offset="100%" stop-color="#4490D9" stop-opacity="0"/>
               </radialGradient>
-              <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                <path d="M 0 0 L 10 5 L 0 10 z" fill="#4490D9"/>
-              </marker>
             </defs>
             <circle cx="240" cy="240" r="220" fill="url(#cyc-bg)"/>
             <circle cx="240" cy="240" r="140" fill="url(#cyc-accent)"/>
             <circle cx="240" cy="240" r="170" fill="none" stroke="#4490D9" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
-            <path d="M 376 198 A 170 170 0 0 1 376 282" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.85"/>
-            <path d="M 282 376 A 170 170 0 0 1 198 376" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.85"/>
-            <path d="M 104 282 A 170 170 0 0 1 104 198" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.85"/>
-            <path d="M 198 104 A 170 170 0 0 1 282 104" stroke="#4490D9" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.85"/>
             <g class="cycle-node" data-step="1" tabindex="0" role="button" aria-label="Step 1: Audit">
               <circle cx="240" cy="60" r="50" class="node-circle" fill="#F2EDED" stroke="#4490D9" stroke-width="1.5"/>
               <text x="240" y="55" text-anchor="middle" font-family="Neue Montreal, system-ui, sans-serif" font-size="11" class="node-label" fill="#4490D9" font-weight="500" letter-spacing="0.08em">01</text>
@@ -216,32 +209,42 @@
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS ============ -->
-    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+    <!-- ============ PRESS & RESEARCH ============ -->
+    <section id="press" class="press" aria-labelledby="press-title">
       <div class="container">
-        <div class="eyebrow on-dark">What educators say</div>
-        <h2 id="testimonials-title">Trusted by the people doing the work.</h2>
+        <div class="eyebrow on-dark">Press &amp; research</div>
+        <h2 id="press-title">The work, documented.</h2>
 
-        <div class="testimonials-grid">
-          <figure class="testimonial">
-            <blockquote>
-              <p>"[Replace with Lindsay Malanga's quote about working with Insights &amp; Innovations]"</p>
-            </blockquote>
-            <figcaption>
-              <strong class="testimonial-name">Lindsay Malanga</strong>
-              <span class="testimonial-role">CEO · Dr. Richard Izquierdo Charter School</span>
-            </figcaption>
-          </figure>
+        <div class="press-grid">
+          <a href="https://www.chalkbeat.org/newyork/2025/08/21/brooklyn-high-school-uses-ai-to-improve-student-writing/" target="_blank" rel="noopener" class="press-card">
+            <div class="press-card-top">
+              <span class="press-type press-type--article">Article</span>
+              <span class="press-source">Chalkbeat</span>
+            </div>
+            <h3 class="press-headline">Can AI act as a writing coach for reluctant writers? This Brooklyn educator is betting on it.</h3>
+            <p class="press-byline">Featuring Rahul Patel</p>
+            <span class="press-cta">Read the story →</span>
+          </a>
 
-          <figure class="testimonial">
-            <blockquote>
-              <p>"[Replace with teacher quote]"</p>
-            </blockquote>
-            <figcaption>
-              <strong class="testimonial-name">Teacher Name</strong>
-              <span class="testimonial-role">Role · School</span>
-            </figcaption>
-          </figure>
+          <a href="https://cpet.tc.columbia.edu/teaching-today-episode-summaries/inside-connectink-what-happens-when-ai-asks-questions-instead-of-giving-answers" target="_blank" rel="noopener" class="press-card">
+            <div class="press-card-top">
+              <span class="press-type press-type--podcast">Podcast</span>
+              <span class="press-source">CPET · Teachers College</span>
+            </div>
+            <h3 class="press-headline">Inside ConnectInk: What Happens When AI Asks Questions Instead of Giving Answers</h3>
+            <p class="press-byline">Featuring the full ConnectInk design team</p>
+            <span class="press-cta">Listen now →</span>
+          </a>
+
+          <a href="https://doi.org/10.59668/2551.25414" target="_blank" rel="noopener" class="press-card">
+            <div class="press-card-top">
+              <span class="press-type press-type--research">Research</span>
+              <span class="press-source">LERN 2026</span>
+            </div>
+            <h3 class="press-headline">Coaching, Not Autocomplete: Early Evidence from ConnectInk's AI-Supported Personal Narrative Pilot</h3>
+            <p class="press-byline">Julio Intriago-Izquierdo &amp; Rahul Patel</p>
+            <span class="press-cta">Read the paper →</span>
+          </a>
         </div>
       </div>
     </section>
@@ -256,22 +259,70 @@
           <img src="images/connectink-logo-cream.png" alt="ConnectInk" class="connectink-logo">
           <h2 id="ci-title">AI-powered feedback for student writing.</h2>
           <p class="connectink-body">
-            Instead of writing for students, ConnectInk offers coaching-style feedback that helps them draft and revise their own work. Developed with CPET at Teachers College, Columbia University.
+            Instead of writing for students, ConnectInk offers coaching-style feedback that helps students draft and revise their own work. Built around a multi-genre knowledge base — from personal narrative and research papers to poetry, literary analysis, and more — it meets students where they are. Developed with CPET at Teachers College, Columbia University.
           </p>
+          <div class="ci-features">
+            <div class="ci-feature">
+              <span class="ci-feature-label">Multi-Genre</span>
+              <span class="ci-feature-desc">Feedback across 12+ writing types</span>
+            </div>
+            <div class="ci-feature">
+              <span class="ci-feature-label">Feedback Tools</span>
+              <span class="ci-feature-desc">AI Coach and Reader's Lens</span>
+            </div>
+            <div class="ci-feature">
+              <span class="ci-feature-label">Coaching Dialogue</span>
+              <span class="ci-feature-desc">Follow up and keep the conversation going</span>
+            </div>
+          </div>
+
           <a href="https://connectink.org" target="_blank" rel="noopener" class="btn btn-primary on-dark">
             Explore ConnectInk <span class="arrow">→</span>
           </a>
         </div>
 
-        <div class="product-preview" aria-hidden="true">
-          <div class="pp-label">Product preview</div>
-          <div class="pp-bar short"></div>
-          <div class="pp-bar"></div>
-          <div class="pp-bar medium"></div>
-          <div class="pp-coach">
-            <div class="pp-coach-label">Coach</div>
-            <div class="pp-coach-bar"></div>
-            <div class="pp-coach-bar last"></div>
+        <div class="pp-replica" role="region" aria-label="ConnectInk interactive demo">
+          <div class="pp-replica-header">
+            <div>
+              <div class="pp-replica-eyebrow">A Quick Tour</div>
+              <div class="pp-replica-title">Try the feedback tools.</div>
+            </div>
+            <button class="pp-replica-close" id="pp-reset" aria-label="Reset demo">×</button>
+          </div>
+
+          <div class="pp-replica-progress">
+            <span class="pp-step-dot pp-step-dot--on"></span>
+            <span class="pp-step-dot"></span>
+            <span class="pp-step-dot"></span>
+            <span class="pp-step-label">AI Coach</span>
+          </div>
+
+          <div class="pp-replica-genre">
+            <span class="pp-genre-tag">Personal Narrative</span>
+            <span class="pp-genre-prompt">Write about a moment that changed how you see something — or someone.</span>
+          </div>
+
+          <div class="pp-replica-editor">
+            <div class="pp-replica-toolbar">
+              <div class="pp-replica-format">
+                <button class="pp-replica-fmt" aria-label="Bold">B</button>
+                <button class="pp-replica-fmt pp-replica-fmt--i" aria-label="Italic">I</button>
+                <button class="pp-replica-fmt pp-replica-fmt--u" aria-label="Underline">U</button>
+              </div>
+              <div class="pp-replica-tabs">
+                <button class="pp-replica-tab pp-replica-tab--active" id="pp-coach-trigger">🎓 AI Coach</button>
+                <button class="pp-replica-tab" id="pp-lens-trigger">👁 Reader's Lens</button>
+              </div>
+            </div>
+
+            <div class="pp-replica-text" id="pp-text-area" contenteditable="true" spellcheck="false">My grandmother's kitchen always smelled like cumin and warm bread. Every Sunday she'd wake before dawn and move between the stove and counter like the steps were memorized. She never measured anything. The flour went in by feel, the salt by sound. I never understood why she worked so hard at it. <mark class="pp-replica-mark">Then one morning she put my hands in the dough and said, "This is how we remember." I didn't know what she meant then. I think I'm starting to.</mark></div>
+
+            <p class="pp-replica-hint" id="pp-hint">Edit the text, then try a tool above.</p>
+
+            <div class="pp-replica-response" id="pp-response" aria-live="polite">
+              <div class="pp-replica-response-label">AI Coach</div>
+              <p class="pp-replica-response-text" id="pp-response-text"></p>
+            </div>
           </div>
         </div>
       </div>

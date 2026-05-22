@@ -1763,9 +1763,9 @@ section {
 
   /* Hero */
   .hero {
-    padding-top: 48px;
-    padding-bottom: 96px;
-    min-height: auto;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    min-height: 100svh;
   }
 
   /* About page hero */
@@ -1808,6 +1808,12 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Press: stack to single column on tablet/mobile */
+  .press-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
   /* ConnectInk H2 smaller */
   .connectink h2 {
     font-size: 32px;
@@ -1830,8 +1836,39 @@ section {
   :root {
     --container-padding: 20px;
     --size-hero: 44px;
+    --space-9: 56px;
+    --space-10: 64px;
   }
-  
+
+  /* Prevent any element from blowing out horizontal width */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Press: single column */
+  .press-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  /* ConnectInk replica: tighten on small screens */
+  .pp-replica {
+    padding: var(--space-4);
+  }
+
+  /* Feature chips: wrap naturally */
+  .ci-features {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  /* Hero CTA buttons: stack */
+  .hero-ctas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
   .partners-grid {
     grid-template-columns: 1fr;
   }

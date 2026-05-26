@@ -539,51 +539,54 @@ section {
   margin-bottom: var(--space-7);
 }
 
-/* Studio mission + pillars */
+/* About home: two-column split */
+.about-home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-9);
+  align-items: start;
+}
+
+.about-home-left h2 {
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+}
+
 .about-mission {
-  font-size: var(--size-body-lg);
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.7;
   color: var(--navy);
   opacity: 0.65;
-  max-width: 600px;
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-6);
 }
 
 .studio-pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-5);
   border-top: 1px solid var(--navy-06);
-  padding-top: var(--space-5);
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-6);
 }
 
 .studio-pillar {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--navy-06);
 }
 
 .studio-pillar-num {
   font-size: 11px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--blue);
   font-weight: 500;
+  flex-shrink: 0;
+  width: 20px;
 }
 
 .studio-pillar-heading {
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-size: 14px;
   color: var(--navy);
-  line-height: 1.4;
-}
-
-@media (max-width: 520px) {
-  .studio-pillars {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
-  }
+  opacity: 0.7;
+  line-height: 1.45;
 }
 
 .video-frame {
@@ -1821,6 +1824,7 @@ section {
   }
 
   /* Two-column sections stack */
+  .about-home-grid,
   .how-grid,
   .connectink-inner,
   .team-grid,

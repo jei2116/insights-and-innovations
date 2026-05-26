@@ -223,6 +223,26 @@
       color: var(--navy);
     }
 
+    /* Student photo */
+    .proposal-figure {
+      margin: var(--space-5) 0;
+    }
+    .proposal-photo {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center 30%;
+      border-radius: var(--radius-card);
+      display: block;
+    }
+    .proposal-caption {
+      font-size: 12px;
+      color: var(--navy);
+      opacity: 0.45;
+      margin-top: var(--space-2);
+      font-style: italic;
+    }
+
     /* Map embed */
     .proposal-map {
       width: 100%;
@@ -343,6 +363,11 @@
               <div class="proposal-section-label">The Big Idea</div>
               <h2>Uplifting Brooklyn students' civic voice, in writing and in public.</h2>
               <p>Young people in Brooklyn are living through one of the most consequential periods of urban change in a generation: neighborhood transformation, institutional distrust, economic pressure, questions about who the city is actually for. And yet their voices are almost entirely absent from civic conversation.</p>
+
+              <figure class="proposal-figure">
+                <img src="images/student-showcase.jpg" alt="A student presents her writing to classmates during a ConnectInk session — 'Sharing and Celebrating Our Drafts'" class="proposal-photo">
+                <figcaption class="proposal-caption">A student shares her work during a ConnectInk writing session.</figcaption>
+              </figure>
 
               <div class="proposal-map">
                 <iframe

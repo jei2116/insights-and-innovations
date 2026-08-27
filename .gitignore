@@ -13,3 +13,4 @@ Thumbs.db
 
 # Local dev
 .env
+.claude/launch.json
